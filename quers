@@ -1,0 +1,12 @@
+ggplot(data=dat2, aes(x=armed, fill=race)) + 
+  geom_bar() + 
+  ggtitle("Barplot of Armed?, filled by Race") + 
+  labs(x="Armed", y="Count")
+
+
+
+ggplot(data=dat2, aesv(dat2$year)) + 
+  geom_histogram(breaks=seq(10, 90, by=1), aes(fill=..count..)) +
+  scale_fill_gradient("Count", low="green", high="red") +
+  ggtitle("Histrogram of Age") + 
+  labs(x="Year", y="Count")
